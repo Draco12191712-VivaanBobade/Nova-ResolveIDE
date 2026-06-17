@@ -1,52 +1,36 @@
-.app {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.topBar {
-    height: 50px;
-    background: #171b31;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 20px;
-}
-
-.main {
-    flex: 1;
-
-    display: flex;
-}
-
 .activityBar {
-    width: 60px;
-    background: #14172a;
-}
-
-.center {
-    flex: 1;
+    width: 64px;
 
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
     align-items: center;
+
+    gap: 20px;
+
+    padding-top: 20px;
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(40px);
 }
 
-.docs {
-    width: 200px;
-    background: #14172a;
+.activityBar img {
+
+    width: 24px;
+
+    opacity: .7;
+
+    transition: .2s;
+
+    cursor: pointer;
+
 }
 
-.gameCard {
-    width: 350px;
+.activityBar img:hover {
 
-    padding: 20px;
+    opacity: 1;
 
-    background: #1f2340;
+    transform: scale(1.15);
 
-    border-radius: 20px;
 }
