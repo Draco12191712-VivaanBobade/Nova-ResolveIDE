@@ -47,7 +47,7 @@ Nova Resolve IDE is built around the following principles:
 Clone the repository:
 
 ```bash
-git clone https://github.com/nova-resolve-ide/nova-resolve.git
+git clone https://github.com/Draco12191712-VivaanBobade/Nova-ResolveIDE.git
 ```
 
 Install dependencies:
