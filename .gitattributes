@@ -1,0 +1,82 @@
+# Normalize line endings automatically
+* text=auto
+
+# Source files
+*.ts text
+*.tsx text
+*.js text
+*.jsx text
+*.mjs text
+*.cjs text
+
+# Web files
+*.html text
+*.css text
+*.scss text
+
+# Config files
+*.json text
+*.jsonc text
+*.yml text
+*.yaml text
+*.toml text
+*.xml text
+
+# Documentation
+*.md text
+*.txt text
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# GitHub Actions
+.github/workflows/*.yml text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg text
+
+# Archives
+*.zip binary
+*.7z binary
+*.rar binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Audio
+*.mp3 binary
+*.wav binary
+*.ogg binary
+
+# Video
+*.mp4 binary
+*.webm binary
+
+# Models
+*.obj text
+*.gltf text
+*.glb binary
+*.fbx binary
+
+# Lockfiles
+package-lock.json text
+pnpm-lock.yaml text
+bun.lock text
+
+# Ignore generated language statistics
+LICENSE linguist-generated=true
+CHANGELOG.md linguist-generated=true
