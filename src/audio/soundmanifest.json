@@ -1,0 +1,167 @@
+{
+  "format_version": 1,
+  "name": "Nova Resolve Default Sounds",
+  "description": "The default sound pack included with Nova Resolve.",
+  "version": "1.0.0",
+  "sounds": {
+    "startup": {
+      "file": "startup.mp3",
+      "volume": 1.0
+    },
+
+    "save": {
+      "file": "save.mp3",
+      "volume": 1.0
+    },
+
+    "file-opened": {
+      "file": "file-opened.mp3",
+      "volume": 1.0
+    },
+
+    "project-opened": {
+      "file": "project-opened.mp3",
+      "volume": 1.0
+    },
+
+    "tab-opened": {
+      "file": "tab-opened.mp3",
+      "volume": 1.0
+    },
+
+    "panel-opened": {
+      "file": "panel-opened.mp3",
+      "volume": 1.0
+    },
+
+    "panel-cleared": {
+      "file": "panel-cleared.mp3",
+      "volume": 1.0
+    },
+
+    "format-document": {
+      "file": "format-document.mp3",
+      "volume": 1.0
+    },
+
+    "fold-code": {
+      "file": "fold-code.mp3",
+      "volume": 1.0
+    },
+
+    "undo": {
+      "file": "undo.mp3",
+      "volume": 1.0
+    },
+
+    "suggestion-available": {
+      "file": "suggestion-available.mp3",
+      "volume": 1.0
+    },
+
+    "quick-fix-available": {
+      "file": "quick-fix-available.mp3",
+      "volume": 1.0
+    },
+
+    "quick-fix-opened": {
+      "file": "quick-fix-opened.mp3",
+      "volume": 1.0
+    },
+
+    "quick-fix-applied": {
+      "file": "quick-fix-applied.mp3",
+      "volume": 1.0
+    },
+
+    "task-running": {
+      "file": "task-running.mp3",
+      "volume": 1.0
+    },
+
+    "task-cancelled": {
+      "file": "task-cancelled.mp3",
+      "volume": 1.0
+    },
+
+    "build-success": {
+      "file": "build-success.mp3",
+      "volume": 1.0
+    },
+
+    "build-failed": {
+      "file": "build-failed.mp3",
+      "volume": 1.0
+    },
+
+    "terminal-bell": {
+      "file": "terminal-bell.mp3",
+      "volume": 1.0
+    },
+
+    "command-success": {
+      "file": "command-success.mp3",
+      "volume": 1.0
+    },
+
+    "search-started": {
+      "file": "search-started.mp3",
+      "volume": 1.0
+    },
+
+    "collaboration-user-joined": {
+      "file": "collaboration-user-joined.mp3",
+      "volume": 1.0
+    },
+
+    "collaboration-user-left": {
+      "file": "collaboration-user-left.mp3",
+      "volume": 1.0
+    },
+
+    "line-added": {
+      "file": "line-added.mp3",
+      "volume": 1.0
+    },
+
+    "line-deleted": {
+      "file": "line-deleted.mp3",
+      "volume": 1.0
+    },
+
+    "line-modified": {
+      "file": "line-modified.mp3",
+      "volume": 1.0
+    },
+
+    "success": {
+      "file": "success.mp3",
+      "volume": 1.0
+    },
+
+    "warning": {
+      "file": "warning.mp3",
+      "volume": 1.0
+    },
+
+    "error": {
+      "file": "error.mp3",
+      "volume": 1.0
+    },
+
+    "action-required": {
+      "file": "action-required.mp3",
+      "volume": 1.0
+    },
+
+    "extension-installed": {
+      "file": "extension-installed.mp3",
+      "volume": 1.0
+    },
+
+    "glitch": {
+      "file": "glitch.ogg",
+      "volume": 1.0
+    }
+  }
+}
