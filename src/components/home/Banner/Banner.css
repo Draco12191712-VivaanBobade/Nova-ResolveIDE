@@ -1,0 +1,228 @@
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.banner__glass {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  width: min(1100px, 92%);
+  min-height: 220px;
+
+  padding: 2rem 2.5rem;
+
+  border-radius: 34px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.06)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(36px) saturate(180%);
+  -webkit-backdrop-filter: blur(36px) saturate(180%);
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s;
+}
+
+
+.banner__glass::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.32),
+    rgba(255, 255, 255, 0) 38%
+  );
+
+  pointer-events: none;
+}
+
+
+.banner__glass::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -150px;
+  top: -220px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(120, 180, 255, 0.22),
+    transparent 70%
+  );
+
+  filter: blur(80px);
+
+  pointer-events: none;
+
+  animation: bannerGlow 12s ease-in-out infinite;
+}
+
+.banner__glass:hover {
+  transform: translateY(-4px) scale(1.01);
+
+  border-color: rgba(255, 255, 255, 0.28);
+
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.banner__logoContainer {
+  width: 130px;
+  height: 130px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 28px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.05)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(25px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 8px 25px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s;
+}
+
+.banner__glass:hover .banner__logoContainer {
+  transform: rotate(-3deg) scale(1.05);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.45),
+    0 14px 35px rgba(0, 0, 0, 0.3);
+}
+
+.banner__logo {
+  width: 82px;
+
+  user-select: none;
+
+  filter: drop-shadow(0 4px 14px rgba(255, 255, 255, 0.25));
+
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.banner__glass:hover .banner__logo {
+  transform: scale(1.08);
+}
+
+.banner__content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__title {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 5vw, 4.3rem);
+
+  font-weight: 700;
+
+  letter-spacing: -0.05em;
+
+  color: white;
+
+  text-shadow: 0 2px 18px rgba(255, 255, 255, 0.1);
+}
+
+.banner__subtitle {
+  margin-top: 0.7rem;
+
+  max-width: 760px;
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.banner__version {
+  margin-top: 1.6rem;
+
+  width: fit-content;
+
+  padding: 0.45rem 1rem;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  backdrop-filter: blur(20px);
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 0.92rem;
+
+  transition:
+    background 0.3s,
+    transform 0.3s;
+}
+
+.banner__version:hover {
+  background: rgba(255, 255, 255, 0.15);
+
+  transform: translateY(-2px);
+}
+
+@keyframes bannerGlow {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-35px) translateY(20px);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
