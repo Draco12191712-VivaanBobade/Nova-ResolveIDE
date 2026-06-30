@@ -1,18 +1,17 @@
-import minecraftbedrock from "./minecraft-bedrock.svg";
-import terraria from "./terraria.svg";
-import arksurvivalascended from "./arksurvivalascended.svg";
-import minecraftjava from "./minecraft-java.svg";
-import stardewvalley from "./stardewvalley.svg";
-import thesims4 from "./thesims4.svg";
-import wowmidnight from "./wow-midnight.svg"
-
+import MinecraftBedrock from "./minecraft-bedrock.svg";
+import Terraria from "./terraria.svg";
+import ArkSurvivalAscended from "./arksurvivalascended.svg";
+import MinecraftJava from "./minecraft-java.svg";
+import StardewValley from "./stardewvalley.svg";
+import TheSims4 from "./thesims4.svg";
+import WowMidnight from "./wow-midnight.svg";
 
 export const GameIcons = {
-    minecraftbedrock,
-    terraria,
-    arksurvivalascended,
-    minecraftjava,
-    stardewvalley,
-    thesims4,
-    wowmidnight
-};
+  MinecraftBedrock,
+  Terraria,
+  ArkSurvivalAscended,
+  MinecraftJava,
+  StardewValley,
+  TheSims4,
+  WowMidnight,
+} as const;
