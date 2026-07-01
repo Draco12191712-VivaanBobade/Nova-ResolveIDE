@@ -1,0 +1,45 @@
+[changelog]
+# Main title of the file
+header = "# Changelog\n"
+
+# The body structure for the nightly unreleased build
+body = """
+## Build {{ timestamp | date(format="%d%m") }} (Version 0.0.1)
+
+**Date:** {{ timestamp | date(format="%Y-%m-%d") }}
+**Git Commit:** {{ commits.0.id | truncate(length=7, end="") }}
+{% for group, commits in commits | group_by(attribute="group") %}
+### {{ group }}
+    {% if group == "Added" %}
+*For new features, integrations, or major UI additions.*
+    {% elif group == "Changed" %}
+*For modifications to existing features or functionality.*
+    {% elif group == "Fixed" %}
+*For bug fixes, crashes, or resolved errors.*
+    {% elif group == "Deprecated" %}
+*For features that are going to be removed in future updates.*
+    {% elif group == "Removed" %}
+*For permanent deletions of code, screens, or features.*
+    {% endif %}
+    {% for commit in commits %}
+- {{ commit.message | upper_first }}
+    {% endfor %}
+{% endfor %}
+"""
+trim = true
+
+[git]
+# Matches your commit prefixes to your explicit subheaders
+commit_parsers = [
+    { message = "^feat", group = "Added" },
+    { message = "^style", group = "Changed" },
+    { message = "^refactor", group = "Changed" },
+    { message = "^fix", group = "Fixed" },
+    { message = "^deprecate", group = "Deprecated" },
+    { message = "^remove", group = "Removed" },
+    { message = "^del", group = "Removed" },
+    # Catch-all default: if you forget a prefix, it goes to Changed
+    { message = ".*", group = "Changed" },
+]
+filter_commits = false
+tag_pattern = "v[0-9]*"
