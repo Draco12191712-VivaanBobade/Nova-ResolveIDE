@@ -37,7 +37,7 @@ export default function GameCard({
         }}
       />
 
-      {/* Game Icon */}
+      {/* gameicon*/}
       <div className="gameCard__iconContainer">
         <img className="gameCard__icon" src={icon} alt={`${name} icon`} />
       </div>
@@ -57,7 +57,6 @@ export default function GameCard({
         </div>
       </div>
 
-      {/* Status */}
       <div
         className={`gameCard__status ${
           installed

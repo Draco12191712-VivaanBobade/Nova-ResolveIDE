@@ -44,7 +44,6 @@
     border-color 0.35s;
 }
 
-
 .banner__glass::before {
   content: "";
 
@@ -60,7 +59,6 @@
 
   pointer-events: none;
 }
-
 
 .banner__glass::after {
   content: "";
