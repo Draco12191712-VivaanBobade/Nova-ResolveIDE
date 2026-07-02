@@ -34,7 +34,7 @@ import LightMode from "./sun.svg";
 import Terminal from "./terminal.svg";
 import Alert from "./triangle-alert.svg";
 
-export const Icons = {
+export const UIIcons = {
     Notifications,
     Documentation,
     Warning,
