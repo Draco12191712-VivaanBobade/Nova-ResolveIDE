@@ -2,15 +2,25 @@ import "./GameSelector.css";
 
 import GameCard from "./GameCard";
 
-import minecraftIcon from "../../../assets/images/icons/games/minecraft-bedrock.svg";
-// import terrariaIcon from "../../../assets/images/icons/games/terraria.svg";
-const games = [
+import { GameIcons } from "../../../assets/icons/games";
+
+interface SupportedGame {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  accentColor: string;
+  installed: boolean;
+  supportedProjectTypes: string[];
+}
+
+const games: SupportedGame[] = [
   {
     id: "minecraft-bedrock",
     name: "Minecraft Bedrock",
     description:
       "Create add-ons, resource packs, skin packs, scripts, and worlds.",
-    icon: minecraftIcon,
+    icon: GameIcons.MinecraftBedrock,
     accentColor: "#101010",
     installed: true,
     supportedProjectTypes: [
@@ -21,20 +31,88 @@ const games = [
     ],
   },
 
-  // i will uncomment later once i add support for these games
+  // Uncomment these as support is added.
 
-  // {
-  //     id: "terraria",
-  //     name: "Terraria",
-  //     description: "Build powerful mods using tModLoader.",
-  //     icon: terrariaIcon,
-  //     accentColor: "#4C8B4F",
-  //     installed: false,
-  //     supportedProjectTypes: [
-  //         "Mod",
-  //         "Texture Pack",
-  //     ],
-  // },
+  /*
+    {
+        id: "terraria",
+        name: "Terraria",
+        description: "Build powerful mods using tModLoader.",
+        icon: GameIcons.Terraria,
+        accentColor: "#4C8B4F",
+        installed: false,
+        supportedProjectTypes: [
+            "Mod",
+            "Texture Pack",
+        ],
+    },
+
+    {
+        id: "minecraft-java",
+        name: "Minecraft Java",
+        description: "Create Fabric, Forge, NeoForge, Quilt and Paper projects.",
+        icon: GameIcons.MinecraftJava,
+        accentColor: "#4E7A42",
+        installed: false,
+        supportedProjectTypes: [
+            "Fabric Mod",
+            "Forge Mod",
+            "NeoForge Mod",
+            "Quilt Mod",
+            "Paper Plugin",
+        ],
+    },
+
+    {
+        id: "stardew-valley",
+        name: "Stardew Valley",
+        description: "Create SMAPI mods and content packs.",
+        icon: GameIcons.StardewValley,
+        accentColor: "#6D9F45",
+        installed: false,
+        supportedProjectTypes: [
+            "SMAPI Mod",
+            "Content Pack",
+        ],
+    },
+
+    {
+        id: "ark-survival-ascended",
+        name: "ARK: Survival Ascended",
+        description: "Develop mods for ARK: Survival Ascended.",
+        icon: GameIcons.ArkSurvivalAscended,
+        accentColor: "#1C6F9A",
+        installed: false,
+        supportedProjectTypes: [
+            "ASA Mod",
+        ],
+    },
+
+    {
+        id: "the-sims-4",
+        name: "The Sims 4",
+        description: "Create gameplay mods and custom content.",
+        icon: GameIcons.TheSims4,
+        accentColor: "#2AA7E8",
+        installed: false,
+        supportedProjectTypes: [
+            "Gameplay Mod",
+            "Custom Content",
+        ],
+    },
+
+    {
+        id: "wow-midnight",
+        name: "World of Warcraft: Midnight",
+        description: "Build addons for World of Warcraft.",
+        icon: GameIcons.WowMidnight,
+        accentColor: "#B58A2C",
+        installed: false,
+        supportedProjectTypes: [
+            "Addon",
+        ],
+    },
+    */
 ];
 
 export default function GameSelector() {
@@ -44,8 +122,8 @@ export default function GameSelector() {
         <h2 className="gameSelector__title">Supported Games</h2>
 
         <p className="gameSelector__subtitle">
-          Choose a game to create a new project, import a .nr project, or open
-          an existing one.
+          Choose a game to create a new project, import a<strong> .nr </strong>
+          project, or open an existing one.
         </p>
       </div>
 
