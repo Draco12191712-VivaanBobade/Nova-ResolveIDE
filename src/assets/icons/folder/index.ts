@@ -310,7 +310,7 @@ import OpenFolder from "./openfolder.svg";
 import UncommittedFolder from "./uncommitedfolder.svg";
 import UncommittedOpenFolder from "./uncommitedopenfolder.svg";
 
-export const FileIcons = {
+export const FolderIcons = {
   EntityFolderOpen,
   EntityFolder,
   FolderAimAssistOpen,
