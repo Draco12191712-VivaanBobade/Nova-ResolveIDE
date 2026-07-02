@@ -1,5 +1,4 @@
-import type { WidgetDefinition } from "./WidgetRegistry";
-
+import type { WidgetDefinition } from "./widgetTypes";
 interface WidgetCardProps {
   widget: WidgetDefinition;
 }

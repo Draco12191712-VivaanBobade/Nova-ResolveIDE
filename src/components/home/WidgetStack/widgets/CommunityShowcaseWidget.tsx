@@ -1,36 +1,47 @@
-import { GameIcons } from "../../../../assets/icons/games";
+import { SystemIcons } from "../../../../assets/icons/system";
+
+interface CommunityProject {
+  id: string;
+  name: string;
+}
 
 export default function CommunityShowcaseWidget() {
-  return (
-    <div className="communityShowcase">
-      <div className="communityShowcase__featured">
-        <img
-          src={GameIcons.MinecraftBedrock}
-          alt="Minecraft Bedrock"
-          className="communityShowcase__gameIcon"
-          draggable={false}
-        />
+  /*
+   * TODO:
+   * Replace with:
+   * const projects = await CommunityProvider.getFeaturedProjects();
+   */
+  const projects: CommunityProject[] = [];
 
-        <div className="communityShowcase__info">
-          <span className="communityShowcase__badge">Trending</span>
+  if (projects.length === 0) {
+    return (
+      <div className="communityShowcase">
+        <div className="communityShowcase__empty">
+          <img
+            src={SystemIcons.User}
+            alt=""
+            className="communityShowcase__icon"
+            draggable={false}
+          />
 
-          <h3 className="communityShowcase__title">Better Animations</h3>
+          <h3 className="communityShowcase__title">No Featured Projects</h3>
 
-          <p className="communityShowcase__creator">by Nova Studios</p>
+          <p className="communityShowcase__description">
+            Community projects will appear here once creators begin sharing them
+            with Nova Resolve.
+          </p>
+
+          <button type="button" className="communityShowcase__button">
+            Explore Community
+          </button>
         </div>
       </div>
+    );
+  }
 
-      <div className="communityShowcase__stats">
-        <div className="communityShowcase__stat">4.8k</div>
-
-        <div className="communityShowcase__stat">61k</div>
-
-        <div className="communityShowcase__stat">Minecraft Bedrock</div>
-      </div>
-
-      <button type="button" className="communityShowcase__button">
-        View Project
-      </button>
+  return (
+    <div className="communityShowcase">
+      {/* Featured project cards will be rendered here */}
     </div>
   );
 }
