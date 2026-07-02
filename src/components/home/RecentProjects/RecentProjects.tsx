@@ -1,6 +1,6 @@
 import "./RecentProjects.css";
 
-import { GameIcons } from "../../../assets/images/icons/games";
+import { GameIcons } from "../../../assets/icons/games";
 
 interface RecentProject {
   id: string;
@@ -21,13 +21,13 @@ const recentProjects: RecentProject[] = [];
  * Eventually replace this with your Game Registry.
  */
 const gameNames: Record<keyof typeof GameIcons, string> = {
-  minecraftbedrock: "Minecraft Bedrock",
-  minecraftjava: "Minecraft Java",
-  terraria: "Terraria",
-  arksurvivalascended: "ARK: Survival Ascended",
-  stardewvalley: "Stardew Valley",
-  thesims4: "The Sims 4",
-  wowmidnight: "World of Warcraft: Midnight",
+  MinecraftBedrock: "Minecraft Bedrock",
+  MinecraftJava: "Minecraft Java",
+  Terraria: "Terraria",
+  ArkSurvivalAscended: "ARK: Survival Ascended",
+  StardewValley: "Stardew Valley",
+  TheSims4: "The Sims 4",
+  WowMidnight: "World of Warcraft: Midnight",
 };
 
 export default function RecentProjects() {
