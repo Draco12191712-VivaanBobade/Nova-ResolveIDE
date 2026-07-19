@@ -1,6 +1,6 @@
 import "./Banner.css";
 
-import novaLogo from "../../../assets/icons/nova-resolve.svg";
+const novaLogo = "/icon-512.png";
 
 export default function Banner() {
   return (
@@ -11,6 +11,7 @@ export default function Banner() {
             className="banner__logo"
             src={novaLogo}
             alt="Nova Resolve Logo"
+            draggable={false}
           />
         </div>
 
