@@ -1,5 +1,33 @@
-# Logs
-logs
+#Dependencies
+node_modules/
+jspm_packages/
+
+#Package Managers
+.pnpm-store/
+.pnp/
+.pnp.js
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+#Build Output
+dist/
+dist-electron/
+build/
+out/
+release/
+coverage/
+
+#Vite
+.vite/
+
+#Electron
+*.asar
+
+#Logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,20 +35,100 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+#Environment Variables
+.env
+.env.*
+!.env.example
 
-# Editor directories and files
+#TypeScript
+*.tsbuildinfo
+
+#Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+#IDE - Visual Studio Code
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 
-structure.txt*
+#IDE - JetBrains
+.idea/
+*.iml
+
+#IDE - Visual Studio
+.vs/
+
+#macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+#Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+#Linux
+*~
+.fuse_hidden*
+.directory
+
+#Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+#Electron Builder
+*.blockmap
+
+#Electron Forge
+out/
+
+#Debug
+*.pid
+*.seed
+*.pid.lock
+
+#Testing
+.nyc_output/
+
+#Generated Icons
+icons/generated/
+
+#Local Database
+*.sqlite
+*.sqlite3
+*.db
+
+#Certificates
+*.pem
+*.key
+*.crt
+certificates/
+
+#Local Server
+server-data/
+uploads/
+
+#Firebase
+.firebase/
+
+#Supabase
+.supabase/
+
+#Docker
+.docker/
+
+#Miscellaneous
+*.orig
+*.rej
