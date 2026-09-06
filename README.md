@@ -1,7 +1,8 @@
-# Tauri + React + Typescript
+# Nova Resolve
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+A professional open-source IDE designed for creating mods, add-ons, resource packs, datapacks, scripts, and game content for any moddable game.
+Inspired by bridge v2! :)
 
-## Recommended IDE Setup
+## Third-Party Components
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+Nova Resolve IDE uses Catppuccin Icons, which are licensed under the MIT License. The original license text can be found in: THIRD_PARTY_LICENSES/CatppuccinIcons-MIT.txt
