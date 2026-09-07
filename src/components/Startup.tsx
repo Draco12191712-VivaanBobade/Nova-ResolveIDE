@@ -27,7 +27,7 @@ export default function vidStartup({ onFinish }: { onFinish: () => void }) {
         muted
         className="w-full h-full object-cover"
       >
-        <source src="/startup.mp4" type="video/mp4" />
+        <source src="" type="video/mp4" />
       </video>
     </div>
   );
